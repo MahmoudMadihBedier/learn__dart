@@ -11,7 +11,7 @@ int factorial(int num){
 }
 bool isPrime(int pnum){
   if (pnum<=1){
-    for(int i=0 ;i<=pnum ;i++){
+    for(int i=0 ;i<=pnum ;){
       if (pnum % i == 0){
         return false;
       }
@@ -26,4 +26,17 @@ int sumArray (List<int> numbers){
     sum=sum+numbers[i];
   }
   return sum;
+}
+
+int getmax(List<int>arry){
+  int iteration=0;
+  int max = arry[iteration];
+  for(int i=0 ;i<arry.length;i++){
+    if (arry[i]>max){
+      max=arry[i];
+    }else {
+      iteration++;
+    }
+  }
+  return max;
 }
