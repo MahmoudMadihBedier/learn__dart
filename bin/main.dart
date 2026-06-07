@@ -15,6 +15,10 @@ void main(){
   print("The sum of the array is: $result");
   */
   List<int> Numbers=[5, 10, 15, 20, 25,2,60,8,3];
-  int maxResult = getmax(Numbers);
-  print("The maximum value in the array is: $maxResult");
+  bool searchResult = searchElement(Numbers, 900);
+  if (searchResult) {
+    print("Element found in the array.");
+  } else {
+    print("Element not found in the array.");
+  }
 }
