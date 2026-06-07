@@ -1,4 +1,4 @@
-import 'dart:io';
+/*import 'dart:io';
 
 void main(){
   print ("Voting eligibility checker");
@@ -10,3 +10,4 @@ void main(){
     print("You are not eligible to vote");
   }
 }
+*/
