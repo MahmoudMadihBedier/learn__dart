@@ -40,3 +40,14 @@ int getmax(List<int>arry){
   }
   return max;
 }
+
+bool searchElement(List<int> array ,int value){
+
+for (int i=0;i<array.length ;i++){
+ 
+  if (array[i]==value){
+    return true;
+  }
+}
+return false;
+}
