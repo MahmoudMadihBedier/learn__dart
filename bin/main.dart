@@ -1,6 +1,6 @@
 import 'functions/functions.dart';
 import 'advanced_functions/advanced.dart';
-
+import 'oop/oop_fundemental.dart';
 import 'dart:io';
 
 void main(){
@@ -23,6 +23,12 @@ void main(){
   } else {
     print("Element not found in the array.");
   }
-  */
+  
   print("the sort of the array is :${selectionSort(Numbers)}");
+  Student s1 = Student(1, "Ahmed", 20, "A");
+  print("Student Name: ${s1.name}, Age: ${s1.age}, Grade : ${s1.grade}");
+*/
+
+Empolees mahmoud= Empolees(10, 5000, 20, ["m"], "mahmoud", "98943898493");
+print(mahmoud.actual_salary);
 }
