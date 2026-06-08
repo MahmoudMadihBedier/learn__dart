@@ -1,6 +1,9 @@
 import 'functions/functions.dart';
 import 'advanced_functions/advanced.dart';
 import 'oop/oop_fundemental.dart';
+import 'oop/student_mangmentSYS.dart';
+
+
 import 'dart:io';
 
 void main(){
@@ -27,8 +30,36 @@ void main(){
   print("the sort of the array is :${selectionSort(Numbers)}");
   Student s1 = Student(1, "Ahmed", 20, "A");
   print("Student Name: ${s1.name}, Age: ${s1.age}, Grade : ${s1.grade}");
-*/
+
 
 Empolees mahmoud= Empolees(10, 5000, 20, ["m"], "mahmoud", "98943898493");
 print(mahmoud.actual_salary);
+
+*/
+List<Student> students=[];
+print ("enter the number of the student that need to enter :");
+int numberOfStudent=int.parse(stdin.readLineSync()!);
+for(int i=0 ;i<=numberOfStudent;i++){
+  print ("enter the id of the student");
+  int id =int.parse(stdin.readLineSync()!);
+  print ("enter the student name :");
+  String name = stdin.readLineSync()!;
+  print("enter the age");
+  int age = int.parse(stdin.readLineSync()!);
+  print("enter the grade");
+  int grade=int.parse(stdin.readLineSync()!);
+  Student student=Student(
+    name,
+    id,
+    age,
+    grade
+  );
+  students.add(student);
+}
+
+
+
+
+
+
 }
