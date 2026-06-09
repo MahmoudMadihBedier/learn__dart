@@ -1,6 +1,7 @@
 import 'functions/functions.dart';
 import 'advanced_functions/advanced.dart';
 import 'oop/oop_fundemental.dart';
+import 'oop/developer_example.dart';
 import 'oop/student_mangmentSYS.dart';
 
 
@@ -18,9 +19,9 @@ void main(){
  
   int result = sumArray(Numbers);
   print("The sum of the array is: $result");
-  */
+  
   List<int> Numbers=[5, 10, 15, 20, 25,2,60,8,3];
-  /*bool searchResult = searchElement(Numbers, 900);
+  bool searchResult = searchElement(Numbers, 900);
   if (searchResult) {
     print("Element found in the array.");
   } else {
@@ -35,7 +36,7 @@ void main(){
 Empolees mahmoud= Empolees(10, 5000, 20, ["m"], "mahmoud", "98943898493");
 print(mahmoud.actual_salary);
 
-*/
+
 List<Student> students=[];
 print ("enter the number of the student that need to enter :");
 int numberOfStudent=int.parse(stdin.readLineSync()!);
@@ -56,6 +57,17 @@ for(int i=0 ;i<=numberOfStudent;i++){
   );
   students.add(student);
 }
+
+*/
+
+
+Employee d1=Developer(36363, 35, "mohamed", 1000, "flutter");
+Employee a1=Accountance(636364, "ahmed",45,500,true );
+a1.view();
+print("${a1.calculateSalary()}");
+print("----------------------");
+d1.view();
+print("${d1.calculateSalary()}");
 
 
 
