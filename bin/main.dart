@@ -1,6 +1,7 @@
 import 'functions/functions.dart';
 import 'advanced_functions/advanced.dart';
 import 'oop/oop_fundemental.dart';
+import 'oop/sahpe_oop.dart';
 import 'oop/developer_example.dart';
 import 'oop/student_mangmentSYS.dart';
 
@@ -58,7 +59,7 @@ for(int i=0 ;i<=numberOfStudent;i++){
   students.add(student);
 }
 
-*/
+
 
 
 Employee d1=Developer(36363, 35, "mohamed", 1000, "flutter");
@@ -70,7 +71,12 @@ d1.view();
 print("${d1.calculateSalary()}");
 
 
+*/
 
+Shape r1=Rectangler(8, 9);
+Shape t1=Triangle(4, 7);
+print ("the area of rectanguler :${r1.calculateArea()}");
+print("the area of the triangile is: ${t1.calculateArea()}");
 
 
 
