@@ -1,4 +1,5 @@
-//name parameter
+/*
+/name parameter
 class Car{
  late String name;
 late String model;
@@ -16,4 +17,17 @@ class Driver{
   Driver.withoutLicense(this.name){
     licenseNumber="No license";
   }
+}
+*/
+
+class Car{
+  final String brand;
+  final int speed ;
+  Car(this.brand, this.speed);
+}
+class Person{
+  final String name;
+  final Car car;
+  Person(this.name, this.car);
+  
 }
