@@ -11,6 +11,23 @@
 
 class BanckAccount{
   final String accountNumber;
-  final double balance;
-  BanckAccount(this.accountNumber, this.balance);
+   double _balance;
+  BanckAccount(this.accountNumber, this._balance);
+set withdraw (double amount){
+  if (amount > _balance && amount > 0 ) {
+    print("Insufficient funds. Withdrawal denied.");
+  } else {
+    _balance -= amount;
+    print("Withdrawal successful. New balance: $_balance");
+  }
+}
+set deposit(double amount){
+  if (amount > 0){
+    _balance += amount;
+    print("Deposit successful. New balance: $_balance");  
+  }else{
+    print("Invalid deposit amount. Deposit denied.");
+  }
+}
+
 }
