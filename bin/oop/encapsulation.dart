@@ -12,6 +12,11 @@
 class BanckAccount{
   final String accountNumber;
    double _balance;
+
+   
+   String get balance=>"user balance is : $_balance";
+
+
   BanckAccount(this.accountNumber, this._balance);
 set withdraw (double amount){
   if (amount > _balance && amount > 0 ) {
