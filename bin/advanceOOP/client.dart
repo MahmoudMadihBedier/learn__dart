@@ -1,10 +1,8 @@
 class Client {
-  int id;
-  int bankAccountNumber;
+ 
   String name;
-  String email;
-  String phoneNumber;
+  String adress;
+  String phone;
 
-  Client(this.id, this.bankAccountNumber, this.name, this.email, this.phoneNumber);
-  
+  Client(this .name, this.adress, this.phone);
 }
